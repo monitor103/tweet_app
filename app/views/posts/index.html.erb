@@ -1,0 +1,19 @@
+<header>
+  <div class="header-logo">
+    <a href="/">top</a>
+  </div>
+    <div class="header-logo">
+    <a href="/posts/new">つぶやく</a>
+  </div>
+</header>
+
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <!-- post.contentを使って書き換えてください -->
+        <%= post.content %>
+      </div>
+    <% end %>
+  </div>
+</div>

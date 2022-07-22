@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get '/' => "home#top"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "posts/index" => "posts#index"
+  # ここに新規投稿ページ用のルーティングを追加してください
+  get "posts/new" => "posts#new"
+  get "posts/:id" => "posts#show"
+  
+  get "/" => "home#top"
+  get "about" => "home#about"
 end

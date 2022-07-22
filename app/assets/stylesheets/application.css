@@ -14,6 +14,8 @@
  *= require_self
  */
 /* reset ================================ */
+
+
 * {
   box-sizing: border-box;
 }
@@ -53,7 +55,7 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: #3ecdc6;
+  background-color: #EBECF0;
   margin: 0;
   min-height: 1vh;
 }
@@ -64,15 +66,17 @@ body {
   width: 100%;
   height: auto;
   min-height: 100%;
-  background-color: #f5f8fa;
+  background-color:#EBECF0;
 }
 
 .container {
   max-width: 600px;
   margin: 60px auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px 15px 15px 15px;
   clear: both;
+  border-radius: 20px;
+  background-color: #EBECF0;
+  box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
 }
 
 /* ヘッダー ================================ */
@@ -81,18 +85,20 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
+ background-color: #EBECF0;
+  box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
 }
 
 .header-logo {
   float: left;
   padding-left: 20px;
-  color: white;
+  color: gray;
   font-size: 22px;
   line-height: 64px;
 }
 
 .header-logo a{
-  color: white;
+  color: gray;
   font-size: 22px;
 }
 
@@ -105,14 +111,14 @@ header {
   float: left;
   line-height: 64px;
   font-size: 13px;
-  color: white;
+  color: gray;
   padding-left: 15px;
 }
 
 .header-menus a {
   float: left;
   font-size: 13px;
-  color: white;
+  color:  gray;
 }
 
 .header-menus .fa {
@@ -123,7 +129,7 @@ header {
   padding: 0 20px;
   float: left;
   line-height: 64px;
-  color: white;
+  color:  gray;
   margin: 0;
   font-size: 13px;
 }
@@ -137,8 +143,8 @@ header {
   width: 100%;
   height: auto;
   min-height: 100%;
-  color: white;
-  background-color: #00acee;
+  color: gray;
+  background-color: #EBECF0;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
@@ -185,9 +191,9 @@ header {
 /* フォーム================================ */
 .form {
   max-width: 600px;
-  margin: 0 auto;
-  background-color: white;
-  box-shadow: 0 2px 6px #c1ced7;
+  border-radius: 50px;
+  background: #EBECF0;
+  box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
 }
 
 .form-heading {
@@ -199,6 +205,7 @@ header {
 
 .form-body {
   padding: 30px;
+  
 }
 
 .form-error {
@@ -213,25 +220,36 @@ header {
   font-size: 16px;
   letter-spacing: 2px;
   border-radius: 2px;
+
 }
 
 .form textarea {
   width: 100%;
+  border: 0px;
+  padding: 10px;
   min-height: 110px;
   font-size: 16px;
   letter-spacing: 2px;
+  background-color: #EBECF0;
+  border-radius: 30px;
+  box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
 }
 
 .form input[type="submit"] {
-  background-color: #3ecdc6;
-  color: white;
+  font-weight: bold;
+  border:0px;
+  background: #EBECF0;
+  box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+  color: gray;
   cursor: pointer;
   font-weight: 300;
   width: 120px;
-  border-radius: 2px;
   margin-top: 8px;
   margin-bottom: 0;
   float: right;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
 }
 
 .form-body:after {
@@ -239,6 +257,16 @@ header {
   display: table;
   clear: both;
 }
+
+.container1 {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 15px 15px 15px 15px;
+    clear: both;
+    border-radius: 20px;
+    /* background-color: #EBECF0;
+    box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC; */
+  }
 
 /* フラッシュ ================================ */
 .flash {
