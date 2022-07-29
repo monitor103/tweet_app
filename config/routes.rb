@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # ここに新規投稿ページ用のルーティングを追加してください
   get "posts/new" => "posts#new"
   get "posts/:id" => "posts#show"
+  post "posts/create" => "posts#create"
   
   get "/" => "home#top"
   get "about" => "home#about"
