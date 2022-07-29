@@ -59,6 +59,11 @@ body {
   margin: 0;
   min-height: 1vh;
 }
+h2.gr1 span{
+    background: -webkit-linear-gradient(left, #00B0F0, #A9D18E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 .main {
   position: absolute;
